@@ -1,0 +1,52 @@
+// ciara.io was lovingly handcrafted by Ciara Burkett
+
+@import 'jeet'
+@import 'typographic'
+
+typographic()
+
+// Color Variables
+
+$background = #463337
+$category = #866269
+$link = #C7143A
+$project-bg = #382529
+$text = #F1DFD5
+
+// Font Variables
+$source = 'Source Sans Pro', sans-serif
+$arbutus = 'Arbutus Slab', serif
+
+// Global
+
+body
+  background-color: $background
+  color: $text
+  font-family: $source
+  h1, h2, h3, h4, h5, h6
+    color: $category
+    font-family: $arbutus
+  ul
+    list-style: none
+  // time
+  //   text-decoration: italic
+  a
+    color: $link
+    text-decoration: none
+
+.container
+  center(800px)
+
+.project li
+  background-color: $project-bg
+  border-radius: 2px
+  margin-bottom: 25px
+  padding-bottom: 0.5px
+  padding-left: 25px
+  padding-right: 25px
+  padding-top: 0.5px
+
+.social
+  ul li
+    display: inline-block
+    padding-right: 20px
